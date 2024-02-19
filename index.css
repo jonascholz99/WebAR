@@ -1,13 +1,9 @@
 body 
 {
-	background-color: #eeeeee;
-	background-image: url("../images/pixels.png");
-	background-repeat: repeat;      /* repeat, no-repeat */
-	background-attachment: fixed;   /* scroll, fixed */
-	background-position: top left;  /* for no-repeat setting: top/bottom, left/right */
+	background-color: #eeeeee;	
 	margin: 2% 5% 0% 5%;            /* top, left, bottom, right or TRBL */
 	
-	font-family: Georgia, Serif;	/* list font names in order of preference */
+	font-family: sans-serif;	/* list font names in order of preference */
 	font-weight: normal;            /* normal, bold */
 	font-style: normal;             /* normal, italic */
 	font-variant: normal;           /* normal, small-caps */
@@ -41,11 +37,8 @@ body
 /* Page text links */
 a 
 {
-	font-size: 20px;
-	font-weight: bold;
-	font-variant: small-caps;
-	color:#00c;
-	text-shadow: 1px 1px 0px #aaa;
+	font-size: 25px;		
+	color:darkblue;	
 	margin: 13px 0px 0px 0px;
 	text-decoration: none;
 	
@@ -81,10 +74,10 @@ a:hover
 
 a .superImage
 {  
-	height: 150px;
-	width: 225px;
+	height: 130px;
+	width: 205px;
 	border: 1px solid #000000;
-	margin: 0px 20px 0px 0px;
+	margin: 10px 20px 0px 10px;
 	float:left;
 	
 	
@@ -124,10 +117,7 @@ a:hover .superImage
 
 .bigTitle
 {
-	font-size: 32px;
-	font-weight: bold;
-	font-variant: small-caps;
-	color:#004;
-	text-align: center;
-	text-shadow: -1px -1px 2px #fff, 1px 1px 3px #000;	
+	font-size: 32px;		
+	color: black;
+	text-align: center;	
 }
