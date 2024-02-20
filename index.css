@@ -1,123 +1,114 @@
-body 
-{
-	background-color: #eeeeee;	
-	margin: 2% 5% 0% 5%;            /* top, left, bottom, right or TRBL */
-	
-	font-family: sans-serif;	/* list font names in order of preference */
-	font-weight: normal;            /* normal, bold */
-	font-style: normal;             /* normal, italic */
-	font-variant: normal;           /* normal, small-caps */
-	font-size: 16px;                /* font size */
-	color: #000000;                 /* hexadecimal RGB color code */
-	text-decoration: none;          /* none, underline, overline, line-through */
-	text-align: left;               /* left, right, center, justify */
+body {
+    margin: 0; /* Entfernt den Standard-Margin */
+    padding: 0; /* Entfernt das Standard-Padding */
+    font-family: sans-serif;
+    background-color: #eeeeee;
 }
 
-.fancy
-{
-	min-height: 150px;
-	/* next two lines for elder IE compatibility */
-	height: auto !important; 
-	height: 150px; 
-	
-	/* Background color and gradients */
-	background: #eeeeee;
-	background: -moz-linear-gradient(top, #ffffff, #cccccc);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#cccccc));
-	/* really nifty translucence */
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8) );
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from( rgba(255, 255, 255, 0.8) ), to( rgba(200, 200, 200, 0.8) ));
-	
-	/* Rounded corners */
-	-moz-border-radius: 15px 15px 15px 15px;
-	-webkit-border-radius: 15px 15px 15px 15px;
-	border-radius: 15px 15px 15px 15px;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Verteilt den Platz zwischen den Items */
+    background-color: #333;
+    color: #fff;
+    margin-right: 100px;
+    width: 100%;    
 }
 
-/* Page text links */
-a 
-{
-	font-size: 25px;		
-	color:darkblue;	
-	margin: 13px 0px 0px 0px;
-	text-decoration: none;
-	
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out; 
+.header .logo-title {
+    display: flex;
+    align-items: center;
 }
 
-.toc
-{
-	font-size: 16px;
+.logo {
+    height: 50px; /* Höhe des Logos */
+    margin-right: 20px; /* Abstand zwischen Logo und Titel */
 }
 
-a:hover 
-{
-	color:#c00;
-	/*text-shadow: 1px 1px 0px #f00;
-	/* gradual change */
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out; 
+.header-links a {
+    color: #fff; /* Weiße Textfarbe für die Links */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    margin-left: 20px; /* Fügt Abstand zwischen den Links hinzu */
+    padding-right: 20px;
 }
 
-.superText
-{
-	color: #000;
-	text-shadow: 1px 1px 0px #aaa;
+.header-links a:hover {
+    text-decoration: underline; /* Fügt eine Unterstreichung beim Hover hinzu */
 }
 
-a .superImage
-{  
-	height: 130px;
-	width: 205px;
-	border: 1px solid #000000;
-	margin: 10px 20px 0px 10px;
-	float:left;
-	
-	
-	/* Rounded corners */
-	-moz-border-radius: 15px 15px 15px 15px;
-	-webkit-border-radius: 15px 15px 15px 15px;
-	border-radius: 15px 15px 15px 15px;
-	
-	position: relative; 
-	
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out; 
-}  
+.title, .intro-text {
+    font-size: 24px; /* Größe des Titels und des Intro-Texts */
+    text-align: center; /* Zentriert den Intro-Text */
+}
 
-a:hover .superImage
-{  
-	top: -10px;  
-	
-	/* fallback on standard opaque colors */
-	-moz-box-shadow: 10px 10px 5px #888;
-	-webkit-box-shadow: 10px 10px 5px #888;
-	box-shadow: 10px 10px 5px #888;
-	/* translucent: the way shadows should be */
-	-moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-	
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
-}  
+.intro-text {
+    max-width: 800px; /* Maximale Breite des Textblocks */
+    margin: 20px auto; /* Zentriert den Block horizontal und fügt vertikalen Abstand hinzu */
+    padding: 10px; /* Etwas Innenabstand */
+}
 
-.bigTitle
-{
-	font-size: 32px;		
-	color: black;
-	text-align: center;	
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt die Umbruch von Kacheln in neue Zeilen */
+    justify-content: space-around; /* Gleichmäßiger Abstand um die Kacheln */
+    align-items: flex-start; /* Ausrichtung der Kacheln am Anfang der Flex-Zeile */
+    width: 100%; /* Stellt sicher, dass der Container die volle Breite einnimmt */
+    max-width: 1200px; /* Maximale Breite des Containers, optional */
+    margin: auto; /* Zentriert den Container, falls gewünscht */
+}
+
+.fancy {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.333% - 30px); /* Für drei Kacheln pro Reihe */
+    height: 400px; /* Feste Höhe für alle Kacheln */
+    margin: 10px;
+    border: 2px solid #ccc; /* Rahmen */
+    border-radius: 10px; /* Abgerundete Ecken */
+    overflow: hidden; /* Verhindert das Überlaufen des Inhalts */
+    text-decoration: none; /* Entfernt die Unterstreichung von Links */
+    color: inherit; /* Verwendet die Textfarbe des Elternelements */
+    background: white; /* Hintergrundfarbe der Kachel */
+}
+
+.fancy img {
+    width: 100%;
+    height: 50%; /* Bild nimmt die obere Hälfte der Kachel ein */
+    object-fit: cover; /* Stellt sicher, dass das Bild den Bereich abdeckt */
+}
+
+.fancy .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* Startet Inhalt von oben */
+    padding: 10px;
+    overflow: auto; /* Ermöglicht Scrollen innerhalb des Inhaltsbereichs, falls nötig */
+}
+
+.fancy .title, .fancy .description {    
+    overflow: hidden; /* Verhindert das Überlaufen des Texts */
+    text-overflow: ellipsis; /* Fügt "..." hinzu, wenn der Text überläuft */
+    margin: 15px 0; /* Vertikaler Abstand für Titel und Beschreibung */
+}
+
+/* Hover-Effekt für Kacheln */
+.fancy:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Anpassungen für unterschiedliche Bildschirmgrößen */
+@media (max-width: 768px) {
+    .fancy {
+        width: calc(50% - 20px); /* Zwei Kacheln pro Reihe */
+    }
+    .fancy .title, .fancy .description {
+        font-size: 14px; /* Kleinere Schriftgröße für kleinere Bildschirme */
+    }
+}
+
+@media (max-width: 480px) {
+    .fancy {
+        width: 100%; /* Eine Kachel pro Reihe */
+    }
 }

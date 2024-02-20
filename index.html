@@ -4,73 +4,83 @@
     <link rel=stylesheet href="index.css"/>
 </head>
 <body>
-    <div class="bigTitle">WebAR Examples</div>
-    <hr>
-    This webpage is a comprehensive resource for exploring WebAR, featuring an array of tests that delve into the vast potential 
+    <!-- Header mit Menüleiste -->
+    <header class="header">
+        <div class="logo-title">
+            <img src="images/dimsplat.png" alt="Logo" class="logo">
+            <div class="title">WebAR Examples</div>
+        </div>
+        <nav class="header-links">            
+            <a href="https://jonascholz99.github.io/WebAR/markers/hiro.png">Hiro</a>
+            <a href="https://jonascholz99.github.io/WebAR/markers/kanji.png">Kanji</a>
+            <a href="https://jonascholz99.github.io/WebAR/markers/letterA.png">A</a>
+            <a href="https://jonascholz99.github.io/WebAR/markers/letterB.png">B</a>
+            <a href="https://github.com/jonascholz99/WebAR">GitHub</a>
+        </nav>
+    </header>
+
+    <div class="intro-text">
+        This webpage is a comprehensive resource for exploring WebAR, featuring an array of tests that delve into the vast potential 
     of Augmented Reality on the web. Each example on the page uniquely incorporates different technologies, 
     showcasing the versatility and wide-ranging applicability of WebAR.
     <br/><br/>
-    Source code hosted at <a class="toc" href="https://github.com/jonascholz99/WebAR">GitHub</a>.
-
-    <hr/>
-
-    <div class="fancy">
-        <a href="arjs-image-tracking.html">
-        <img src="images/arjs-image-tracking.png" class="superImage" />
-        <br/>ARjs & A-Frame - Image Tracking</a>
-        <p class ="superText">This example is an implementation of image tracking and the display of a GLTF model with AR.js and A-Frame (Marker: <a class="toc" href="https://jonascholz99.github.io/WebAR/markers/imageTracking.jpg">Image</a>).</p>
+    
     </div>
+    
+    <div class="container">
+        <!-- Example Image Tracking -->
+        <a href="arjs-image-tracking.html" class="fancy">
+            <img src="images/arjs-image-tracking.png" alt="ARjs & A-Frame - Image Tracking">
+            <div class="content">
+                <div class="title">ARjs & A-Frame - Image Tracking</div>
+                <div class="description">This example is an implementation of image tracking and the display of a GLTF model with AR.js and A-Frame.</div>
+            </div>
+        </a>    
+        
+        <!-- Example Marker Tracking -->
+        <a href="arjs-threejs-marker-tracking.html" class="fancy">
+            <img src="images/arjs-threejs-marker-tracking.png" alt="ARjs & ThreeJS - Marker Tracking">
+            <div class="content">
+                <div class="title">ARjs & ThreeJS - Marker Tracking</div>
+                <div class="description">In this example, marker tracking is used with AR.js and Three.js. A simple cube is displayed on the marker.</div>
+            </div>
+        </a> 
 
-    <hr>
+        <!-- Example 3D Model -->
+        <a href="arjs-threejs-model.html" class="fancy">
+            <img src="images/arjs-threejs-model.png" alt="ARjs & ThreeJS - 3D Model">
+            <div class="content">
+                <div class="title">ARjs & ThreeJS - 3D Model</div>
+                <div class="description">Here, a 3D object is also displayed, but not through image tracking. Instead, marker tracking with AR.js and Three.js is used.</div>
+            </div>
+        </a> 
 
-    <div class="fancy">
-        <a href="arjs-threejs-marker-tracking.html">
-        <img src="images/arjs-threejs-marker-tracking.png" class="superImage" />
-        <br/>ARjs & ThreeJS - Marker Tracking</a>
-        <p class ="superText">In this example, marker tracking is used with AR.js and Three.js. A simple cube is displayed on the marker. (Marker: <a class="toc" href="https://jonascholz99.github.io/WebAR/markers/hiro.png">Hiro</a>) </p>
+        <!-- Example AR Portal -->
+        <a href="arjs-threejs-portal-AR.html" class="fancy">
+            <img src="images/arjs-threejs-portal.png" alt="ARjs & ThreeJS - Portal">
+            <div class="content">
+                <div class="title">ARjs & ThreeJS - AR Portal</div>
+                <div class="description">On the marker, a portal appears. You can look around it with the camera and see a different place through the portal.</div>
+            </div>
+        </a> 
+
+        <!-- Example Shadow -->
+        <a href="arjs-threejs-shadow.html" class="fancy">
+            <img src="images/arjs-threejs-shadow.png" alt="ARjs & ThreeJS - Shadow">
+            <div class="content">
+                <div class="title">ARjs & ThreeJS - Shadow</div>
+                <div class="description">In this example, you can see how shadows can also be displayed. Here, objects cast dynamic shadows even when moving.</div>
+            </div>
+        </a> 
+
+        <!-- Example Multible -->
+        <a href="arjs-threejs-multipleCubes.html" class="fancy">
+            <img src="images/arjs-threejs-multible-objects.png" alt="ARjs & ThreeJS - Multible Markers">
+            <div class="content">
+                <div class="title">ARjs & ThreeJS - Multible Markers</div>
+                <div class="description">In this example, it is shown how objects can be displayed on multiple markers simultaneously.</div>
+            </div>
+        </a> 
     </div>
-
-    <hr>
-
-    <div class="fancy">
-        <a href="arjs-threejs-model.html">
-        <img src="images/arjs-threejs-model.png" class="superImage" />
-        <br/>ARjs & ThreeJS - 3D Model</a>
-        <p class ="superText">Here, a 3D object is also displayed, but not through image tracking. Instead, marker tracking with AR.js and Three.js is used. (Marker: <a class="toc" href="https://jonascholz99.github.io/WebAR/markers/kanji.png">Kanji</a>)
-        </p>
-    </div>
-
-    <hr>
-
-    <div class="fancy">
-        <a href="arjs-threejs-portal-AR.html">
-        <img src="images/arjs-threejs-model.png" class="superImage" />
-        <br/>ARjs & ThreeJS - Portal</a>
-        <p class ="superText">On the marker, a portal appears. You can look around it with the camera and see a different place through the portal. (Marker: <a class="toc" href="https://jonascholz99.github.io/WebAR/markers/kanji.png">Kanji</a>)
-        </p>
-    </div>
-
-    <hr>
-
-    <div class="fancy">
-        <a href="arjs-threejs-shadow.html">
-        <img src="images/arjs-threejs-model.png" class="superImage" />
-        <br/>ARjs & ThreeJS - Shadow</a>
-        <p class ="superText">In this example, you can see how shadows can also be displayed. Here, objects cast dynamic shadows even when moving. (Marker: <a class="toc" href="https://jonascholz99.github.io/WebAR/markers/kanji.png">Kanji</a>)
-        </p>
-    </div>
-
-    <hr>
-
-    <div class="fancy">
-        <a href="arjs-threejs-multipleCubes.html">
-        <img src="images/arjs-threejs-model.png" class="superImage" />
-        <br/>ARjs & ThreeJS - Multible Markers</a>
-        <p class ="superText">In this example, it is shown how objects can be displayed on multiple markers simultaneously.
-        </p>
-    </div>
-
-    <hr>
-
 </body>
 </html>
