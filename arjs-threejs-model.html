@@ -127,17 +127,17 @@ function initialize()
 	
 
 	new THREE.MTLLoader()
-		.setPath( 'models/trex/' )
-		.load( 'trex.mtl', function ( materials ) {
+		.setPath( 'models/marble_obj/' )
+		.load( 'marble_bust_01_4k.mtl', function ( materials ) {
 			materials.preload();
 			new THREE.OBJLoader()
 				.setMaterials( materials )
-				.setPath( 'models/trex/' )
-				.load( 'trex.obj', function ( group ) {
+				.setPath( 'models/marble_obj/' )
+				.load( 'marble_bust_01_4k.obj', function ( group ) {
 					mesh0 = group.children[0];
 					mesh0.material.side = THREE.DoubleSide;
 					mesh0.position.y = 0.1;
-					mesh0.scale.set(0.05,0.05,0.05);
+					mesh0.scale.set(4,4,4);
 					markerRoot1.add(mesh0);
 				}, onProgress, onError );
 		});
