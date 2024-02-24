@@ -82,7 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start; /* Startet Inhalt von oben */
-    padding: 10px;
+    padding: 20px;
     overflow: auto; /* Ermöglicht Scrollen innerhalb des Inhaltsbereichs, falls nötig */
 }
 
@@ -98,17 +98,57 @@ body {
 }
 
 /* Anpassungen für unterschiedliche Bildschirmgrößen */
-@media (max-width: 768px) {
-    .fancy {
-        width: calc(50% - 20px); /* Zwei Kacheln pro Reihe */
+@media (max-width: 1170px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Verteilt den Platz zwischen den Items */
+        background-color: #333;
+        color: #fff;
+        margin-right: 100px;
+        width: 100%;    
+        height: 200px;        
     }
-    .fancy .title, .fancy .description {
-        font-size: 14px; /* Kleinere Schriftgröße für kleinere Bildschirme */
+    .logo {
+        height: 150px; /* Höhe des Logos */
+        margin-right: 20px; /* Abstand zwischen Logo und Titel */
+    }
+    
+    .title, .intro-text {
+        font-size: 38px; /* Größe des Titels und des Intro-Texts */
+        text-align: center; /* Zentriert den Intro-Text */
+    }
+    .header-links a {
+        color: #fff; /* Weiße Textfarbe für die Links */
+        text-decoration: none; /* Entfernt die Unterstreichung */
+        margin-left: 20px; /* Fügt Abstand zwischen den Links hinzu */
+        padding-right: 20px;
+        font-size: 30px;
+    }
+    .fancy {
+        width: calc(100% - 20px);       
+        font-size: 35px; 
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
+        height: 800px;
+    }
+    .fancy img {
+        width: 100%;
+        height: 50%; /* Bild nimmt die obere Hälfte der Kachel ein */
+        object-fit: cover; /* Stellt sicher, dass das Bild den Bereich abdeckt */
     }
 }
 
 @media (max-width: 480px) {
     .fancy {
-        width: 100%; /* Eine Kachel pro Reihe */
+        width: calc(100% - 20px);        
+    }
+    .header {
+        flex-direction: column; /* Stapelt Logo/Titel und Links vertikal auf kleinen Bildschirmen */
+        align-items: center; /* Zentriert die Inhalte */
+    }
+    .header-links a {
+        margin: 5px 0; /* Fügt vertikalen Abstand zwischen den Links hinzu */
     }
 }
