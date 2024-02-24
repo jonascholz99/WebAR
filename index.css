@@ -126,10 +126,8 @@ body {
         font-size: 30px;
     }
     .fancy {
-        width: calc(100% - 20px);       
-        font-size: 35px; 
-        margin-left: 100px;
-        margin-right: 100px;
+        width: calc(50% - 20px);       
+        font-size: 15px;                 
         margin-top: 30px;
         height: 800px;
     }
