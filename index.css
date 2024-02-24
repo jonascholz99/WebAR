@@ -139,14 +139,43 @@ body {
 }
 
 @media (max-width: 480px) {
-    .fancy {
-        width: calc(100% - 20px);        
-    }
     .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Verteilt den Platz zwischen den Items */
+        background-color: #333;
+        color: #fff;
+        margin-right: 100px;
+        width: 100%;    
+        height: 130px;  
         flex-direction: column; /* Stapelt Logo/Titel und Links vertikal auf kleinen Bildschirmen */
-        align-items: center; /* Zentriert die Inhalte */
+        align-items: center; /* Zentriert die Inhalte */      
+    }
+    .logo {
+        height: 100px; /* Höhe des Logos */
+        margin-right: 20px; /* Abstand zwischen Logo und Titel */
+    }
+    
+    .title, .intro-text {
+        font-size: 20px; /* Größe des Titels und des Intro-Texts */
+        text-align: center; /* Zentriert den Intro-Text */
     }
     .header-links a {
-        margin: 5px 0; /* Fügt vertikalen Abstand zwischen den Links hinzu */
+        color: #fff; /* Weiße Textfarbe für die Links */
+        text-decoration: none; /* Entfernt die Unterstreichung */
+        margin-left: 10px; /* Fügt Abstand zwischen den Links hinzu */
+        padding-right: 20px;
+        font-size: 20px;        
+    }
+    .fancy {
+        width: calc(90% - 20px);       
+        font-size: 20px;                 
+        margin-top: 30px;
+        height: 600px;
+    }
+    .fancy img {
+        width: 100%;
+        height: 50%; /* Bild nimmt die obere Hälfte der Kachel ein */
+        object-fit: cover; /* Stellt sicher, dass das Bild den Bereich abdeckt */
     }
 }
